@@ -7,9 +7,9 @@ import { Link } from 'react-router-dom';
 const Cart = ({allpage,cateFilter}) => {
   return (
     <>
-    {cateFilter.length > 0 ?  <div className='flex justify-between flex-wrap'>
+    {cateFilter.length > 0 ?  <div className='sm:flex justify-between flex-wrap'>
             {cateFilter.map((item)=>(
-                     <div className='w-[48%] md:w-[32%] px-5'>
+                     <div className='w-[100%] mx-auto md:mx-0 md:w-[48%] lg:w-[32%] px-5'>
                         <Link to={`/shop/${item.id}`}>
                         <div className=' relative group my-5'>
                          <div className='bg-black text-center w-[120px] absolute top-[10px] left-[10px]'>
